@@ -32,6 +32,10 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+        </dependency>
 
         <!-- logging -->
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

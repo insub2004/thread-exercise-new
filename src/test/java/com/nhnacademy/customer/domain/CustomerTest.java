@@ -4,8 +4,14 @@ import ch.qos.logback.core.testUtil.RandomUtil;
 import com.nhnacademy.customer.exception.InsufficientFundsException;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.EnumSource;
+import org.junit.jupiter.params.provider.MethodSource;
 
+import java.time.Month;
 import java.util.Random;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -56,14 +62,23 @@ class CustomerTest {
         assertEquals(300_000, money);
     }
 
-    @Test
     @Order(5)
     @DisplayName("pay 메서드 실패")
-    void failPay() {
+    @ParameterizedTest(name = "{index} : {arguments} is negative")
+    @MethodSource("provideNegativeInteger")
+    void failPay(int input) {
         // 파라미터로 음수 전달할 경우, 예외 발생
-        assertThrows(IllegalArgumentException.class, () -> customer.pay(-100));
+        assertThrows(IllegalArgumentException.class, () -> customer.pay(input));
         // amount가 고객이 소지하고 있는 금액보다 많을 경우, 예외 발생
         // TODO [insub] checked 예외인데 assertThrows 안에 예외를 명시해놨기 때문에 따로 예외를 처리하는 로직이 필요 없는 건가?
         assertThrows(InsufficientFundsException.class, () -> customer.pay(10_000_000));
+    }
+
+    private static Stream<Arguments> provideNegativeInteger() {
+        return Stream.of(
+                Arguments.of(-1, -2, -3),
+                Arguments.of(-5, -44),
+                Arguments.arguments(-4,-5)
+        );
     }
 }
