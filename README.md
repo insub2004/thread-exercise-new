@@ -28,3 +28,12 @@
 - assertAll
 
 # step5 - product
+### Class. Product, ProductService, ProductRepository, ProductIdGenerator
+- Product 관련 클래스들 생성
+- Product ID 생성 generator
+### Test. test code
+- spy(repository)
+
+# step6 - product - config
+### Class. App
+- ProductServiceImpl 생성
