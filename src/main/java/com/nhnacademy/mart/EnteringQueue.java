@@ -43,8 +43,6 @@ public class EnteringQueue {
         }
 
         customerQueue.add(customer);
-        log.debug("customer add enteringQueue : {}", customer);
-
         notifyAll();
     }
 
