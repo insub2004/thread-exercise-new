@@ -26,3 +26,5 @@
 - App에서 50크기의 enteringQueue 생성 후 customerGenerator를 통해서 customer 등록
 ### Test. test code
 - assertAll
+
+# step5 - product

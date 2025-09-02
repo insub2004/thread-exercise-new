@@ -1,7 +1,7 @@
 package com.nhnacademy;
 
 import com.nhnacademy.customer.generator.CustomerGenerator;
-import com.nhnacademy.mart.EnteringQueue;
+import com.nhnacademy.mart.entering.EnteringQueue;
 
 public class App {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package com.nhnacademy.customer.generator;
 
-import com.nhnacademy.mart.EnteringQueue;
+import com.nhnacademy.mart.entering.EnteringQueue;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

@@ -1,6 +1,7 @@
 package com.nhnacademy.mart;
 
 import com.nhnacademy.customer.domain.Customer;
+import com.nhnacademy.mart.entering.EnteringQueue;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

@@ -1,4 +1,4 @@
-package com.nhnacademy.customer.exception;
+package com.nhnacademy.mart.product.exception;
 
 public class ProductAlreadyExistsException extends RuntimeException {
     public ProductAlreadyExistsException(String message) {

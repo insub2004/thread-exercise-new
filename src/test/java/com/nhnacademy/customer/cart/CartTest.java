@@ -1,11 +1,10 @@
 package com.nhnacademy.customer.cart;
 
-import com.nhnacademy.customer.exception.ProductAlreadyExistsException;
+import com.nhnacademy.mart.product.exception.ProductAlreadyExistsException;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 
 import java.io.Serializable;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 

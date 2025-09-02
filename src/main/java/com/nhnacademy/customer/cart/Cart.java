@@ -1,6 +1,6 @@
 package com.nhnacademy.customer.cart;
 
-import com.nhnacademy.customer.exception.ProductAlreadyExistsException;
+import com.nhnacademy.mart.product.exception.ProductAlreadyExistsException;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.nhnacademy.mart;
+package com.nhnacademy.mart.entering;
 
 import com.nhnacademy.customer.domain.Customer;
 import lombok.extern.slf4j.Slf4j;

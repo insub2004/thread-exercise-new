@@ -3,11 +3,10 @@ package com.nhnacademy.customer.generator;
 import com.devskiller.jfairy.Fairy;
 import com.devskiller.jfairy.producer.person.Person;
 import com.nhnacademy.customer.domain.Customer;
-import com.nhnacademy.mart.EnteringQueue;
+import com.nhnacademy.mart.entering.EnteringQueue;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.Duration;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
