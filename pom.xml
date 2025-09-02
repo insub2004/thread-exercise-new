@@ -57,6 +57,13 @@
             <version>4.3.0</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- random data-->
+        <dependency>
+            <groupId>com.devskiller</groupId>
+            <artifactId>jfairy</artifactId>
+            <version>0.6.5</version>
+        </dependency>
     </dependencies>
 
 </project>

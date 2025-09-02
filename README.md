@@ -22,4 +22,5 @@
 # step4 - customer generator
 ### Class. CustomerGenerator
 - 외부 라이브러리를 사용해서 랜덤 customer 생성
+- 생성 후 entering queue에 등록
 ### Test. test code
